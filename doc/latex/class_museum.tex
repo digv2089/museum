@@ -1,0 +1,58 @@
+\doxysection{Museum Class Reference}
+\hypertarget{class_museum}{}\label{class_museum}\index{Museum@{Museum}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_museum_a4ca94fbcf7e1f168ccc9ec75c8ec364a}{addvisitor}} (const \mbox{\hyperlink{class_visitor}{Visitor}} \&visitor)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_museum_a4ca94fbcf7e1f168ccc9ec75c8ec364a}{Museum\+::addvisitor}. \end{DoxyCompactList}\item 
+std\+::pair$<$ std\+::pair$<$ int, int $>$, int $>$ \mbox{\hyperlink{class_museum_ad118dddf74f5a09a418889dd98725995}{findmaxvisitortimeperiod}} () const
+\begin{DoxyCompactList}\small\item\em \doxylink{class_museum_ad118dddf74f5a09a418889dd98725995}{Museum\+::findmaxvisitortimeperiod}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_museum_a4ca94fbcf7e1f168ccc9ec75c8ec364a}\label{class_museum_a4ca94fbcf7e1f168ccc9ec75c8ec364a} 
+\index{Museum@{Museum}!addvisitor@{addvisitor}}
+\index{addvisitor@{addvisitor}!Museum@{Museum}}
+\doxysubsubsection{\texorpdfstring{addvisitor()}{addvisitor()}}
+{\footnotesize\ttfamily void Museum\+::addvisitor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_visitor}{Visitor}} \&}]{visitor }\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_museum_a4ca94fbcf7e1f168ccc9ec75c8ec364a}{Museum\+::addvisitor}. 
+
+This function maintains the count of the vistors at entry and exit times.
+
+
+\begin{DoxyParams}{Parameters}
+{\em visitor} & visitor object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\Hypertarget{class_museum_ad118dddf74f5a09a418889dd98725995}\label{class_museum_ad118dddf74f5a09a418889dd98725995} 
+\index{Museum@{Museum}!findmaxvisitortimeperiod@{findmaxvisitortimeperiod}}
+\index{findmaxvisitortimeperiod@{findmaxvisitortimeperiod}!Museum@{Museum}}
+\doxysubsubsection{\texorpdfstring{findmaxvisitortimeperiod()}{findmaxvisitortimeperiod()}}
+{\footnotesize\ttfamily std\+::pair$<$ std\+::pair$<$ int, int $>$, int $>$ Museum\+::findmaxvisitortimeperiod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\doxylink{class_museum_ad118dddf74f5a09a418889dd98725995}{Museum\+::findmaxvisitortimeperiod}. 
+
+This function contains the logic to find the time period containing the maximum visitors
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+starttime , endtime during which we noticed maximum visitor count and vistor count 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+museum.\+h\item 
+museum.\+cpp\end{DoxyCompactItemize}

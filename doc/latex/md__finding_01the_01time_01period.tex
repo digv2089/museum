@@ -1,0 +1,14 @@
+\chapter{Core algorithm logic}
+\hypertarget{md__finding_01the_01time_01period}{}\label{md__finding_01the_01time_01period}\index{Core algorithm logic@{Core algorithm logic}}
+\hypertarget{md__finding_01the_01time_01period_autotoc_md0}{}\doxysection{\texorpdfstring{Map\+: countvisitors}{Map\+: countvisitors}}\label{md__finding_01the_01time_01period_autotoc_md0}
+This is an ordered map which keep track of entry and exit time of visitors according to the below logics \+:
+
+
+\begin{DoxyItemize}
+\item 1-\/ key =\texorpdfstring{$>$}{>} entry time , value =\texorpdfstring{$>$}{>} value+=1 \{ to keep count of all visitors coming at this entry time \}
+\item 2-\/ key =\texorpdfstring{$>$}{>} exit time , value =\texorpdfstring{$>$}{>} value=0 \{ to take care of leaving time inclusion logic \}
+\item 3-\/ key =\texorpdfstring{$>$}{>} exit time + 1 , value =\texorpdfstring{$>$}{>} value-\/=1 \{ to accomodate count of visitors already left \}
+\end{DoxyItemize}
+
+we took ordered map so that data is sorted according to time as key\hypertarget{md__finding_01the_01time_01period_autotoc_md1}{}\doxysection{\texorpdfstring{Function \+: findmaxvisitortimeperiod}{Function \+: findmaxvisitortimeperiod}}\label{md__finding_01the_01time_01period_autotoc_md1}
+we loop over countvisitors map and keep on updating maxvisitor , maxstarttime and maxendtime. (currentvisitor == maxvisitor \&\& maxvisitor != 0) -\/ here in this condition we make use of condition 2 while filling countvisitors map above and fill the appropriate maxenditme. 
